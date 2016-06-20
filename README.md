@@ -1,5 +1,5 @@
 # LunarCore
-小历（iOS &amp; OS X）的农历核心部分。
+小历（iOS & OS X）的农历核心部分。
 
 # 何为小历
 小历是一个简洁的农历 app，目前支持 iOS & OS X 两端，iOS 端多次被 App Store 官方推荐。
@@ -45,6 +45,8 @@ LunarCore 最早来自于一个 JavaScript 编写的农历库：[LunarCalendar](
 - 在子线程生成上个月和下个月的日历
 
 # 联系方式
-[微博 @StackOverflowError](http://weibo.com/0x00eeee/)
+Weibo: [@StackOverflowError](http://weibo.com/0x00eeee/)
 
-[邮件 log.e@qq.com](mailto:log.e@qq.com)
+Twitter: [@cyanapps](https://twitter.com/cyanapps)
+
+Email: [log.e@qq.com](mailto:log.e@qq.com)
