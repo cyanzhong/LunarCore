@@ -2,9 +2,13 @@
 小历（iOS & OS X）的农历核心部分。
 
 # 何为小历
+
+<a href="https://itunes.apple.com/app/id1031088612">![](https://cdn.rawgit.com/cyanzhong/LunarCore/master/App_Store.svg)</a>
+<a href="https://itunes.apple.com/app/id1114272557">![](https://cdn.rawgit.com/cyanzhong/LunarCore/master/Mac_App_Store.svg)</a>
+
 小历是一个简洁的农历 app，目前支持 iOS & OS X 两端，iOS 端多次被 App Store 官方推荐。
-![image](https://github.com/cyanzhong/LunarCore/raw/master/Mac.png)
 ![image](https://github.com/cyanzhong/LunarCore/raw/master/iOS.png)
+![image](https://github.com/cyanzhong/LunarCore/raw/master/Mac.png)
 
 # 前世今生
 LunarCore 最早来自于一个 JavaScript 编写的农历库：[LunarCalendar](https://github.com/zzyss86/LunarCalendar)。
