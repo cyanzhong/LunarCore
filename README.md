@@ -1,4 +1,7 @@
 # LunarCore
+![Language](https://img.shields.io/badge/language-objc-orange.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 小历（iOS & OS X）的农历核心部分。
 
 # 何为小历
