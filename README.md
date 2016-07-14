@@ -1,6 +1,6 @@
 # LunarCore
-![Language](https://img.shields.io/badge/language-objc-orange.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+[![Language](https://img.shields.io/badge/language-objc-orange.svg)](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/cyanzhong/LunarCore/blob/master/LICENSE)
 
 小历（iOS & OS X）的农历核心部分。
 
@@ -52,8 +52,6 @@ LunarCore 最早来自于一个 JavaScript 编写的农历库：[LunarCalendar](
 - 在子线程生成上个月和下个月的日历
 
 # 联系方式
-Weibo: [@StackOverflowError](http://weibo.com/0x00eeee/)
-
-Twitter: [@cyanapps](https://twitter.com/cyanapps)
-
-Email: [log.e@qq.com](mailto:log.e@qq.com)
+[![Weibo](https://img.shields.io/badge/Weibo-%20@StackOverflowError%20-red.svg)](http://weibo.com/0x00eeee/)
+[![Twitter](https://img.shields.io/badge/Twitter-@cyanapps-green.svg)](https://twitter.com/cyanapps)
+[![Email](https://img.shields.io/badge/Email-log.e@qq.com-blue.svg)](mailto:log.e@qq.com)
