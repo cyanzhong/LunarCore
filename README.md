@@ -52,6 +52,6 @@ LunarCore 最早来自于一个 JavaScript 编写的农历库：[LunarCalendar](
 - 在子线程生成上个月和下个月的日历
 
 # 联系方式
-[![Weibo](https://img.shields.io/badge/Weibo-%20@StackOverflowError%20-red.svg)](http://weibo.com/0x00eeee/)
-[![Twitter](https://img.shields.io/badge/Twitter-@cyanapps-green.svg)](https://twitter.com/cyanapps)
-[![Email](https://img.shields.io/badge/Email-log.e@qq.com-blue.svg)](mailto:log.e@qq.com)
+[![Weibo](https://img.shields.io/badge/weibo-%20@StackOverflowError%20-red.svg)](http://weibo.com/0x00eeee/)
+[![Twitter](https://img.shields.io/badge/twitter-@cyanapps-green.svg)](https://twitter.com/cyanapps)
+[![Email](https://img.shields.io/badge/email-log.e@qq.com-blue.svg)](mailto:log.e@qq.com)
