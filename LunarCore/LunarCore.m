@@ -817,7 +817,7 @@ NSMutableDictionary *solarToLunar(int _year, int _month, int _day) {
     if ((lunarDate1 == lunarMonthDays.count - 1) &&
         (lunarDate2 == [lunarMonthDays[lunarMonthDays.count - 1] intValue])) {
         lunarFtv = lunarFestival()[@"d0100"];
-    } else if (lunarLeapMonth > 0 && lunarDate1 > lunarLeapMonth) {
+    } else if (lunarLeapMonth > 0 && lunarDate1 >= lunarLeapMonth) {
         NSString *date = formatDay(lunarDate1 - 1,lunarDate2);
         lunarFtv = lunarFestival()[date];
     } else {
