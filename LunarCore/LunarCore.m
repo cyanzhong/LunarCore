@@ -931,3 +931,53 @@ NSMutableDictionary *calendar(int _year, int _month) {
     
     return calendarData;
 };
+
+/**
+ * 计算农历日期离正月初一有多少天
+ * @param {Number} year,month,day 农年，月(0-12，有闰月)，日
+ */
+int getDaysBetweenZheng(int year, int month, int day) {
+    NSMutableDictionary *lunarYearDays = getLunarYearDays(year);
+    NSMutableArray *monthDays = lunarYearDays[@"monthDays"];
+    int days = 0;
+    for (int i=0; i<monthDays.count; ++i) {
+        if (i < month) {
+            days += [monthDays[i] intValue];
+        } else {
+            break;
+        }
+    };
+    return (days + day - 1);
+};
+
+/**
+ * 将农历转换为公历
+ * @param {Number} year,month,day 农历年，月(1-13，有闰月)，日
+ */
+NSMutableDictionary *lunarToSolar(int _year, int _month, int _day) {
+    
+    NSMutableDictionary *inputDate = formatDate(_year, _month, _day);
+    
+    if (inputDate[@"error"]) {
+        return inputDate;
+    }
+    
+    int year = [inputDate[@"year"] intValue];
+    int month = [inputDate[@"month"] intValue];
+    int day = [inputDate[@"day"] intValue];
+    
+    int between = getDaysBetweenZheng(year, month, day); // 离正月初一的天数
+    int *yearData = lunarInfo[year - minYear];
+    int zenMonth = yearData[1];
+    int zenDay = yearData[2];
+    
+    double timeInterval = [Date(year, zenMonth - 1, zenDay) timeIntervalSince1970] + between * 86400;
+    NSDate *offDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *components = [gregorian components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:offDate];
+    return [@{
+        @"year": @(components.year),
+        @"month": @(components.month),
+        @"day": @(components.day)
+    } mutableCopy];
+};
