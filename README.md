@@ -20,7 +20,7 @@ LunarCore 最早来自于一个 JavaScript 编写的农历库：[LunarCalendar](
 
 为了更灵活的抽离，LunarCore 不包含任何 UI 实现，所有的数据均以 Dictionary 的形式透出。
 
-# 食用方法
+# 使用方法
 ```Objective-C
 #import "AppDelegate.h"
 #import "LunarCore.h"
