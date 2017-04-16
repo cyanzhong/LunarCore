@@ -22,8 +22,8 @@ LunarCore 最早来自于一个 JavaScript 编写的农历库：[LunarCalendar](
 
 # 食用方法
 ```Objective-C
-#import "AppDelegate.h"
-#import "LunarCore.h"
+# import "AppDelegate.h"
+# import "LunarCore.h"
 
 @implementation AppDelegate
 
